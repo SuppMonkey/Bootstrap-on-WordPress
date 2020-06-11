@@ -1,18 +1,18 @@
 <?php
 /**
- * The template for displaying 404 pages (Not Found)
+ * 404 page.
  *
- * Please see /external/bootstrap-utilities.php for info on BsWp::get_template_parts()
- *
- * @package 	WordPress
- * @subpackage 	Bootstrap 4.4.1
- * @autor 		Babobski
+ * @package WebOS
+ * @author Mark Red
+ * @link https://dragonmonkeygroup.com
  */
-?>
-<?php BsWp::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
+get_header(); ?>
+<!-- 404 page -->
 <h2>
-	<?php echo __('Page not found', 'wp_babobski'); ?>
+	<?php echo __('Page not found'); ?>
 </h2>
 
-<?php BsWp::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer' ) ); ?>
+<?php get_footer(); ?>
+
+
